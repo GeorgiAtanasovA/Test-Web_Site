@@ -1,0 +1,257 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Galeria s Koli i Animacia</title>
+
+   <style>
+      body {
+         height: 50em;
+         background: rgb(240,183,161);
+         -moz-animation-name: backColor;
+         -o-animation-name: backColor;
+         -webkit-animation-name: backColor;
+         animation-name: backColor;
+         -moz-animation-duration: 6s;
+         -o-animation-duration: 6s;
+         -webkit-animation-duration: 6s;
+         animation-duration: 6s;
+         -moz-animation-iteration-count: 5;
+         -o-animation-iteration-count: 5;
+         -webkit-animation-iteration-count: 5;
+         animation-iteration-count: 5;
+      }
+
+
+      @-moz-keyframes backColor {
+         10% {
+            background-color: rgb(240,183,161);
+         }
+
+         35% {
+            background-color: red;
+         }
+
+         75% {
+            background-color: yellow;
+         }
+
+         100% {
+            background-color: rgb(240,183,161);
+         }
+      }
+
+      @-webkit-keyframes backColor {
+         10% {
+            background-color: rgb(240,183,161);
+         }
+
+         35% {
+            background-color: red;
+         }
+
+         75% {
+            background-color: yellow;
+         }
+
+         100% {
+            background-color: rgb(240,183,161);
+         }
+      }
+
+      @keyframes backColor {
+         10% {
+            background-color: rgb(240,183,161);
+         }
+
+         35% {
+            background-color: red;
+         }
+
+         75% {
+            background-color: yellow;
+         }
+
+         100% {
+            background-color: rgb(240,183,161);
+         }
+      }
+
+      input {
+         display: none;
+      }
+
+      h2 {
+         background: rgb(208,228,247);
+         background: -moz-linear-gradient(top, rgba(208,228,247,1) 0%, rgba(10,119,213,1) 50%, rgba(135,188,234,1) 100%);
+         background: -webkit-linear-gradient(top, rgba(208,228,247,1) 0%,rgba(10,119,213,1) 50%,rgba(135,188,234,1) 100%);
+         background: linear-gradient(to bottom, rgba(208,228,247,1) 0%,rgba(10,119,213,1) 50%,rgba(135,188,234,1) 100%);
+         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 );
+         padding: 10px 10px 10px 10px;
+         margin: 0;
+         text-align: center;
+      }
+
+         h2:hover {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+         }
+
+      img:hover {
+         cursor: pointer;
+      }
+
+      img {
+         margin: 10px;
+         height: 70px;
+         display: inline-block;
+         border-radius: 6px;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+      }
+
+      #pic1:checked{
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url(https://i.pinimg.com/originals/42/02/a7/4202a751263ac579362b4f7c00c7f77a.jpg);
+      }
+
+      #pic2:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 700px;
+          border-radius: 6px;
+         content: url(https://images.hdqwalls.com/wallpapers/bugatti-sport-car-77.jpg);
+      }
+
+      #pic3:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 900px;
+          border-radius: 6px;
+         content: url(https://carwow-uk-wp-0.imgix.net/Ferrari-F8-Tributo.jpg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750);
+      }
+
+      #pic4:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url(https://secure.static.tumblr.com/9c98365a24990c298a74fb90bc5cc2b7/xd4ejno/bA1nn297y/tumblr_static_tumblr_static__640.jpg);
+      }
+
+      #pic5:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url("https://m.media-amazon.com/images/I/51M7h3P+v9L._AC_SL1024_.jpg");
+      }
+
+      #pic6:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url(https://i.pinimg.com/originals/5f/c2/ae/5fc2ae96fde91eb76da3c5478d382acb.jpg);
+      }
+
+      #pic7:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url(https://cdn.lifestyleasia.com/wp-content/uploads/2019/01/11211233/050_divo.jpg);
+      }
+
+      #pic8:checked {
+         display: block;
+         box-shadow: 7px 7px 8px rgb(72, 70, 70);
+         position: absolute;
+         margin-top: 10em;
+         left: 30px;
+         height: 464px;
+         width: 800px;
+          border-radius: 6px;
+         content: url(https://cdn.lifestyleasia.com/wp-content/uploads/2019/01/11213651/aston-martin-valkyrie-wallpapers-31815-1725019.jpg);
+      }
+   </style>
+</head>
+
+<body>
+
+   <a href="Online Zone.html"> <h2 onclick="alert('Hello folks! The gallery is under construction!')"> Hello! </h2></a>
+
+   <div class="wrapper">
+
+      <label for="pic1">
+         <img src="https://i.pinimg.com/originals/42/02/a7/4202a751263ac579362b4f7c00c7f77a.jpg" />
+      </label>
+      <input type="radio" id="pic1" name="name" />
+
+      <label for="pic2">
+         <img src="https://images.hdqwalls.com/wallpapers/bugatti-sport-car-77.jpg" />
+      </label>
+      <input type="radio" id="pic2" name="name" />
+
+      <label for="pic3">
+         <img src="https://carwow-uk-wp-0.imgix.net/Ferrari-F8-Tributo.jpg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=750" />
+      </label>
+      <input type="radio" id="pic3" name="name" />
+      <label for="pic4">
+         <img src="https://secure.static.tumblr.com/9c98365a24990c298a74fb90bc5cc2b7/xd4ejno/bA1nn297y/tumblr_static_tumblr_static__640.jpg" />
+      </label>
+      <input type="radio" id="pic4" name="name" />
+
+      <label for="pic5">
+         <img src="https://m.media-amazon.com/images/I/51M7h3P+v9L._AC_SL1024_.jpg" />
+      </label>
+      <input type="radio" id="pic5" name="name" />
+
+      <label for="pic6">
+         <img src="https://i.pinimg.com/originals/5f/c2/ae/5fc2ae96fde91eb76da3c5478d382acb.jpg" />
+      </label>
+      <input type="radio" id="pic6" name="name" />
+
+      <label for="pic7">
+         <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/01/11211233/050_divo.jpg" />
+      </label>
+      <input type="radio" id="pic7" name="name" />
+
+      <label for="pic8">
+         <img src="https://cdn.lifestyleasia.com/wp-content/uploads/2019/01/11213651/aston-martin-valkyrie-wallpapers-31815-1725019.jpg" />
+      </label>
+      <input type="radio" id="pic8" name="name" />
+   </div>
+</body>
+</html>

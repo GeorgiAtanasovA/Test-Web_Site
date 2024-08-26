@@ -1,0 +1,197 @@
+﻿//-----------------------Promenlivi-----------------
+@bordersColor: solid 3px #4f4f4f;
+@borderRadius: 20px;
+@textPadding: 20px;
+@inlineBlock: inline-block;
+@textColor: #fbe0ff;
+
+
+@from-Color: #fce7ff;
+@middle-Color: #dd87ff;
+@to-Color: #b600ff;
+@from-Pos: 0%;
+@middle-Pos: 10%;
+@to-Pos: 100%;
+//--------------Gradient Mixin----------------------
+//Дефиниране
+.virusaGradient(@from-Color, @from-Pos, @middle-Color, @middle-Pos, @to-Color, @to-Pos) {
+    background: @to-Color;
+    background: -moz-linear-gradient(top,@from-Color @from-Pos, @middle-Color @middle-Pos, @to-Color @to-Pos);
+    background: -webkit-linear-gradient(top,@from-Color @from-Pos, @middle-Color @middle-Pos, @to-Color @to-Pos);
+    background: linear-gradient(to bottom,@from-Color @from-Pos, @middle-Color @middle-Pos, @to-Color @to-Pos);
+    background-repeat: no-repeat;
+}
+//--------------------Darken Lighten Mixins-----------------------
+@colorDark: #5e5e5e;
+@colorLight: yellow;
+@valueDk: 20%;
+@valueLt: 10%;
+
+.colorDarken(dark, @colorDark,@valueDk) {
+    color: darken(@colorDark,@valueDk);
+}
+
+.colorDarken(light, @colorLight,@valueLt) {
+    color: lighten(@colorLight,@valueLt);
+}
+
+//----------------------Body---------------------
+body {
+    * {
+        padding: 0;
+        margin: 0;
+       
+    }
+    // Използва се без да се пише нещо пред него
+    .virusaGradient(@from-Color, @from-Pos, @middle-Color, @middle-Pos, @to-Color, @to-Pos);
+
+    b {
+        color: #6a1bff;
+    }
+
+    nav {
+        color: @textColor+30%;
+        font-weight: bold;
+        font-size: 20px;
+        border: @bordersColor;
+        border-Radius: @borderRadius;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        padding-left: @textPadding;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        width: 61%;
+        word-spacing: 15px;
+        text-shadow: 2px 2px 6px black;
+    }
+
+    header {
+        margin-left: 40px;
+        margin-right: 40px;
+
+        h1 {
+            border-Radius: @borderRadius;
+            text-shadow: 3px 3px 6px black;
+            font-family: 'CommercialScript BT';
+            font-size: 50px;
+            color: @textColor+50%;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #logInfoButton {
+            display: inline-block;
+            width: 25%;
+            float: right;
+
+            div {
+                border: none;
+                color: @textColor+200%;
+                text-shadow: 3px 3px 6px #4f4f4f;
+
+                input {
+                    width: 60%;
+                    margin-left: 5px;
+                    border-Radius: @borderRadius;
+                    background-color: @to-Color+40;
+                }
+
+                &:hover {
+                    text-shadow: 4px 4px 7px #000000;
+                }
+            }
+
+            button {
+                margin-bottom: 4%;
+                box-shadow: 3px 3px 6px #4f4f4f;
+                height: 30px;
+                width: 130px;
+                border: @bordersColor;
+                border-Radius: @borderRadius;
+                color: @colorLight;
+                .virusaGradient(@from-Color, @from-Pos, @middle-Color, @middle-Pos, @to-Color, @to-Pos);
+
+                &:hover {
+                    box-shadow: 6px 6px 9px #4f4f4f;
+                }
+
+                &:active {
+                    border-collapse: collapse;
+                    box-shadow: 3px 3px 5px #4f4f4f;
+                    position: relative;
+                    top: 2px;
+                    left: 2px;
+                }
+            }
+        }
+    }
+
+    .textAll {
+        border-Radius: @borderRadius;
+        width: 65%;
+        margin-left: 30px;
+        display: inline-block;
+
+        .text {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: @bordersColor;
+            border-Radius: @borderRadius;
+            color: @textColor;
+            padding: @textPadding;
+
+            #headerText {
+                padding-bottom: 10px;
+                text-shadow: 2px 2px 6px black;
+            }
+
+            .publish {
+                float: right;
+                padding: 2%;
+
+                b {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    aside {
+        position: relative;
+        width: 20%;
+        float: right;
+        margin-right: 80px;
+        margin-left: 20px;
+        vertical-align: top;
+
+        div {
+            border: @bordersColor;
+            border-Radius: @borderRadius*0.5%;
+            color: @textColor;
+            margin-bottom: 10px;
+            padding: @textPadding;
+
+            h4 {
+                text-shadow: 2px 2px 6px black;
+                margin-bottom: 6px;
+            }
+
+            span {
+                display: inline-block;
+
+                img {
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: @textColor;
+        text-shadow: 2px 2px 6px black;
+    }
+}

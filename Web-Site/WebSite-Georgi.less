@@ -1,0 +1,230 @@
+﻿
+@backColor: aquamarine;
+@width: 350px;
+@height: 300px;
+@some: #00ff21;
+@imgShadow:#333333;
+
+body {
+    background: rgb(255,255,244);
+    background: -moz-linear-gradient(top, rgba(255,255,244,1) 0%, rgba(239,224,127,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,244,1) 0%,rgba(239,224,127,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,244,1) 0%,rgba(239,224,127,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fffff4', endColorstr='#efe07f',GradientType=0 );
+    text-align: center;
+    background-attachment: fixed;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-style: italic;
+    font-size: 25px;
+    text-shadow: #333333 5px 5px 10px;
+}
+
+#divH1 {
+    background: rgb(183,222,237);
+    background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 75%, rgba(33,180,226,1) 76%, rgba(183,222,237,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 75%,rgba(33,180,226,1) 76%,rgba(183,222,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(183,222,237,1) 0%,rgba(113,206,239,1) 75%,rgba(33,180,226,1) 76%,rgba(183,222,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=0 );
+}
+
+#divH2 {
+    margin-top: -20px;
+    margin-bottom: -10px;
+    padding: 5px;
+    color: #777777;
+    font-style: italic;
+    font-family: 'Bungee Shade';
+    font-size: 35px;
+    text-shadow: #535353 8px 8px 14px;
+}
+
+#divH2:hover {
+    margin-top: -35px;
+    margin-bottom: -13px;
+    color: #000000;
+    font-style: italic;
+    font-size: 42px;
+    text-shadow: #535353 8px 8px 14px;
+}
+
+#DownloadFile {
+    display: inline-block;
+    font-size: 18px;
+}
+
+h2 {
+   text-shadow: #808080 5px 5px 10px;
+   margin: 10px;
+   font-size: 30px;
+   text-decoration: underline;
+}
+
+img {
+    margin: 20px;
+    width: 450px;
+    height: 300px;
+    box-shadow: @imgShadow 7px 7px 12px;
+}
+
+img:hover {
+    box-shadow: @imgShadow 15px 15px 20px;
+
+    /*------------------------това е заедно------------------------------*/
+    animation: shakeDownlImg 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shakeDownlImg {
+
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+@-moz-keyframes shakeDownlImg {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+@-webkit-keyframes shakeDownlImg {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/*-----------------------това е заедно-------------------------------*/
+
+@keyframes rotateDownlImg {
+    100% {
+        transform: rotate(360deg);
+    }
+}

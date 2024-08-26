@@ -1,0 +1,173 @@
+﻿/*-----------------------Promenlivi-----------------*/
+/*--------------Gradient Mixin----------------------*/
+/*Дефиниране*/
+/*--------------------Darken Lighten Mixins-----------------------*/
+/*----------------------Body---------------------*/
+body {
+   /*Използва се без да се пише нещо пред него*/
+   background: #b600ff ;
+   background: -moz-linear-gradient(top, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+   background: -webkit-linear-gradient(top, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+   background: linear-gradient(to bottom, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+  background-attachment: fixed;
+}
+
+   body * {
+      padding: 0;
+      margin: 0;
+   }
+
+   body b {
+      color: #6a1bff;
+   }
+
+   body nav {
+      color: #fffeff;
+      font-weight: bold;
+      font-size: 20px;
+      border: solid 3px #4f4f4f;
+      border-Radius: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 30px;
+      padding-left: 20px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      width: 63.3%;
+      word-spacing: 30px;
+      text-shadow: 2px 2px 6px black;
+   }
+
+   body header {
+      margin-left: 40px;
+      margin-right: 40px;
+   }
+
+      body header h1 {
+         border-Radius: 20px;
+         text-shadow: 3px 3px 6px black;
+         font-family: 'CommercialScript BT';
+         font-size: 50px;
+         color: #ffffff;
+         display: inline-block;
+         margin-right: 10px;
+      }
+
+      body header #logInfoButton {
+         display: inline-block;
+         width: 25%;
+         float: right;
+      }
+
+         body header #logInfoButton div {
+            border: none;
+            color: #ffffff;
+            text-shadow: 3px 3px 6px #4f4f4f;
+         }
+
+            body header #logInfoButton div input {
+               width: 60%;
+               margin-left: 5px;
+               border-Radius: 20px;
+               background-color: #de28ff;
+            }
+
+            body header #logInfoButton div:hover {
+               text-shadow: 4px 4px 7px #000000;
+            }
+
+         body header #logInfoButton button {
+            margin-bottom: 4%;
+            box-shadow: 3px 3px 6px #4f4f4f;
+            height: 30px;
+            width: 130px;
+            border: solid 3px #4f4f4f;
+            border-Radius: 20px;
+            color: yellow;
+            background: #b600ff;
+            background: -moz-linear-gradient(top, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+            background: -webkit-linear-gradient(top, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+            background: linear-gradient(to bottom, #fce7ff 0%, #dd87ff 10%, #b600ff 100%);
+            background-repeat: no-repeat;
+         }
+
+            body header #logInfoButton button:hover {
+               box-shadow: 6px 6px 9px #4f4f4f;
+            }
+
+            body header #logInfoButton button:active {
+               border-collapse: collapse;
+               box-shadow: 3px 3px 5px #4f4f4f;
+               position: relative;
+               top: 2px;
+               left: 2px;
+            }
+
+   body .textAll {
+      border-Radius: 20px;
+      width: 65%;
+      margin-left: 30px;
+      display: inline-block;
+   }
+
+      body .textAll .text {
+         margin-bottom: 10px;
+         padding: 10px;
+         border: solid 3px #4f4f4f;
+         border-Radius: 20px;
+         color: #fbe0ff;
+         padding: 20px;
+      }
+
+         body .textAll .text #headerText {
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 6px black;
+         }
+
+         body .textAll .text .publish {
+            float: right;
+            padding: 2%;
+         }
+
+            body .textAll .text .publish b {
+               font-weight: bold;
+            }
+
+   body aside {
+      position: relative;
+      width: 20%;
+      float: right;
+      margin-right: 80px;
+      margin-left: 20px;
+      vertical-align: top;
+   }
+
+      body aside div {
+         border: solid 3px #4f4f4f;
+         border-Radius: 10px;
+         color: #fbe0ff;
+         margin-bottom: 10px;
+         padding: 20px;
+      }
+
+         body aside div h4 {
+            text-shadow: 2px 2px 6px black;
+            margin-bottom: 6px;
+         }
+
+         body aside div span {
+            display: inline-block;
+         }
+
+            body aside div span img {
+               height: 20px;
+            }
+
+   body footer {
+      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #fbe0ff;
+      text-shadow: 2px 2px 6px black;
+   }
+/*# sourceMappingURL=LESS - Forum Post.css.map*/ 
